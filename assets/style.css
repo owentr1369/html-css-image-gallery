@@ -47,15 +47,18 @@ img {
   align-items: center;
   justify-content: center;
   color: white;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: 0.5s;
 }
 .close {
   position: fixed;
   top: 15px;
   right: 25px;
-  font-size: 35px;
 }
 .control {
-  font-size: 35px;
+  font-size: 60px;
   position: absolute;
 }
 .control.prev {
@@ -68,4 +71,15 @@ img {
   width: 70%;
   height: 70%;
   margin: auto;
+}
+.gallery .close {
+  font-size: 30px;
+}
+.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+.hide {
+  display: none;
 }
